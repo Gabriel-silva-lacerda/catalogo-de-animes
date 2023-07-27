@@ -1,0 +1,19 @@
+@import "../Variables.scss";
+
+.loading {
+    display: flex;
+    justify-content: center;
+    p {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 10px solid #ccc;
+        border-right-color: transparent;
+        animation: animaLoading 1s infinite;
+    }
+    @keyframes animaLoading {
+        to {
+            transform: rotate(360deg);
+          }
+    }
+}

@@ -1,0 +1,38 @@
+@import "../Variables.scss";
+
+@media (max-width: 750px) { 
+    .header {
+        .searchContainer {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-items: flex-start;
+            ul {
+                grid-column: 3;
+            }
+            .containerInput  {
+                grid-row: 2;
+                grid-column: span 3;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .header {
+        .searchContainer {
+          justify-items: center;
+          h1 {
+            grid-column: span 3;
+            
+          }
+            ul {
+                grid-column: span 3;
+            }
+            .containerInput  {
+                grid-row: 3;
+            }
+        }
+       
+    }
+}

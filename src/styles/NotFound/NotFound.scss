@@ -1,0 +1,49 @@
+@import "../Variables.scss";
+.notFound {
+    padding: 8rem 1.5rem 0px 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .notFoundContainer {
+        border-right: 1px solid $gray;
+        background: $black;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 3.5rem;
+        color: $white;
+    }
+    h2 {
+        color: $ligthGray;
+        margin: 20px 0px;
+    }
+    ul {
+        li {
+            color: $ligthGray;
+            margin-bottom: 10px;
+        }
+    }
+  
+    .home {
+        text-transform: uppercase;
+        color: $purple;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 750px) {
+    .notFound {
+        padding-top: 11rem;
+     }
+}
+
+@media (max-width: 470px)  {
+    .notFound {
+        padding-top: 14rem;
+        h1 {
+            font-size: 2.5rem;
+            color: $white;
+        }
+     }
+}

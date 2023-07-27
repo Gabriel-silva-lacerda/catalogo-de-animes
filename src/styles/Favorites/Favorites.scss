@@ -1,0 +1,96 @@
+@import "../Variables.scss";
+.favoriteContainer {
+    padding: 7rem 1.5rem 0px 1.5rem;
+    min-height: 100vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        color: $white;
+        margin-bottom: 1.2rem;
+        .detalis {
+            color: $purple;
+        }
+    }
+    .favorites {
+        display: grid;  
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 20px;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+            z-index: 2;
+            &:hover button,
+            &:hover a
+            {
+                opacity: 1;
+                z-index: 1;
+                pointer-events: initial;
+                
+            }
+            img {
+                border-radius: 10px;
+                max-width: 100%;
+                transition: .3s;
+            }
+            p {
+                color: $white;
+                text-align: end;
+                font-size: 1.2rem;
+                max-width: 300px;
+                text-align: center;
+            }
+            button {
+                padding: 15px 25px;
+                border-radius: 30px;
+                background: $purple;
+                color: $white;
+                font-weight: bold;
+                display: inline-block;
+                font-size: 1.1rem;
+                cursor: pointer;
+                border: none;
+                position: absolute;
+                top: 50%;
+                opacity: 0;
+                z-index: -1;
+                transition: .3s ease-in;
+            }
+            a {
+                padding: 15px 25px;
+                border-radius: 30px;
+                background: $purple;
+                color: $white;
+                font-weight: bold;
+                display: inline-block;
+                font-size: 1.1rem;
+                cursor: pointer;
+                border: none;
+                position: absolute;
+                top: 30%;
+                opacity: 0;
+                transition: .3s ease-in;
+                z-index: -1;
+            }
+            
+        }  
+    }
+}
+
+@media (max-width: 750px) {
+    .favoriteContainer { 
+        padding-top: 11rem;
+    }
+
+}
+
+@media (max-width: 470px) {
+    .favoriteContainer { 
+        padding-top: 14rem;
+    }
+}
+
