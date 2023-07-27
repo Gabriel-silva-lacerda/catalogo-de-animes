@@ -2,10 +2,10 @@
 
 .descripitionContainer {
     background: $lightBlack;
-    min-height: 100vh;
+    min-height: 88.8vh;
     display: flex;
     justify-content: center;
-    padding: 6rem 1.5rem 0 1.5rem;
+    padding:  1.5rem;
     max-width: 1300px;
     margin: 0 auto;
     transform: translate(-20px);
@@ -30,7 +30,6 @@
     .descripitionAnime {
         display: flex;
         align-items: center;
-        margin: 5rem 0;
         gap: 50px;
         transform: translate(-20px);
         opacity: 0;

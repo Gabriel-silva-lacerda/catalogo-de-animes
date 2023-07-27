@@ -3,7 +3,7 @@
 .containerDescripiton {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 5.5rem 1.5rem 0px 1.5rem;
+    padding: 0 1.5rem;
     min-height: 100vh;
     .loadingContainer {
         display: flex;
@@ -58,20 +58,5 @@
                 transition: .3s ease-in;
             }
         }
-    }
-}
-
-@media (max-width: 750px) {
-    .containerDescripiton {
-        padding-top: 8rem;
-        .loadingContainer { 
-            margin-top: 3rem;
-        }      
-    }
-}
-
-@media (max-width: 470px) {
-    .containerDescripiton {
-        padding-top: 11rem;
     }
 }
