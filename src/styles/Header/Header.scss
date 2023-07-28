@@ -2,10 +2,7 @@
 
 .header {
     background: $lightBlack;
-    width: 100%;
-    top: 0;
     transform: translate(-20px);
-    opacity: 0;
     animation: animeLeft 0.3s forwards;
     &::before {
         content: "";
