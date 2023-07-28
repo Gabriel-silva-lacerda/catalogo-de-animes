@@ -4,6 +4,7 @@ import AppContext from "../context/AppContext";
 import Error from "../Components/Error";
 import Loading from "../Components/Loading";
 import useFetch from "../Hooks/useFetch";
+import Head from "../Components/Head";
 
 import "../styles/Favorites/Favorites.scss";
 
@@ -12,6 +13,7 @@ const Favorites = () => {
   const { error, loading } = useFetch();
   return (
     <section className="favoriteContainer">
+      <Head title="Favorites" descripiton="anime favorites" />
       {favoritesAnimes.length ? (
         <h1 className="titleFavorite">
           <span className="detalis">Favorites</span> Animes{" "}

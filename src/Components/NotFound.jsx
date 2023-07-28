@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Head from "../Components/Head";
 
 import "../styles/NotFound/NotFound.scss";
 
 const NotFound = () => {
   return (
     <section className="notFound">
+      <Head title="Notfoud" descripiton="anime not found" />
       <div className="notFoundContainer">
         <h1>Page not found :( </h1>
         <h2>Suggestions: </h2>

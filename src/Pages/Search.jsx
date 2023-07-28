@@ -5,6 +5,7 @@ import AnimeList from "../Components/AnimeList";
 import Loading from "../Components/Loading";
 import Error from "../Components/Error";
 import BtnUp from "../Components/BtnUp";
+import Head from "../Components/Head";
 
 import "../styles/AnimeList/AnimeList.scss";
 
@@ -24,6 +25,7 @@ const Search = () => {
 
   return (
     <section>
+      <Head title="Seacrh" descripiton="anime search" />
       <div className="containerDescripiton">
         {error && <Error />}
         <div className="loadingContainer">

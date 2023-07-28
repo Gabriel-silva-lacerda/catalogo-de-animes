@@ -4,6 +4,7 @@ import AnimesHome from "../Components/AnimesHome";
 import Error from "../Components/Error";
 import Loading from "../Components/Loading";
 import BtnUp from "../Components/BtnUp";
+import Head from "../Components/Head";
 
 import "../styles/AnimeList/AnimeList.scss";
 
@@ -21,6 +22,7 @@ const Home = () => {
 
   return (
     <section>
+      <Head title="Home" descripiton="anime home" />
       <div className="containerDescripiton">
         {error && <Error />}
         <div className="loadingContainer">{loading && <Loading />}</div>
